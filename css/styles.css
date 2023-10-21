@@ -294,6 +294,21 @@ body {
     fill: var(--WHITE);
 }
 
+/* PORTFOLIO STYLING-------------------------------------- */
+.projects ul {
+    width: 100%;
+    flex-wrap:wrap;
+}
+.projects li {
+    width: 360px;
+}
+
+.projects li img{
+    width: 100%;
+}
+
+
+
 /* footer styling----------------------------------------- */
 .footer {
     padding-top: 100px;
