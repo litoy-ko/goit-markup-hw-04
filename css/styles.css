@@ -156,23 +156,6 @@ body {
 
 /* end of header styling---------------------------- */
 
-
-/* team section styling--------------------------- */
-.team {
-    background-color: var(--CLOUD);
-}
-
-.team .list {
-    text-align: center;
-}
-
-.team .list li {
-    border-radius: 0px 0px 4px 4px;
-    background: var(--WHITE, #FFF);
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-   
-}
-
 /* Hero section styling  */
 .hero {
     padding-top: 188px;
@@ -204,11 +187,39 @@ body {
     padding: 16px 32px;
 }
 
-.hero-btn:hover, .hero-btn:focus{
+.hero-btn:hover,
+.hero-btn:focus {
     cursor: pointer;
     background: var(--ocean);
 }
+
 /* end of hero section styling---------------- */
+
+/* about section styling-------------------------------- */
+.about-icon{
+    padding: 24px 0;
+    text-align: center;
+    background-color: var(--CLOUD);
+
+}
+
+/* team section styling--------------------------- */
+.team {
+    background-color: var(--CLOUD);
+}
+
+.team .list {
+    text-align: center;
+}
+
+.team .list li {
+    border-radius: 0px 0px 4px 4px;
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+   
+}
+
+
 
 /* footer styling----------------------------------------- */
 .footer {
