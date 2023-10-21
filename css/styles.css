@@ -2,6 +2,7 @@
     --NAVY-BLUE: #2E2F42;
     --IRIS: #4D5AE5;
     --SLATE: #434455;
+    --LIGHT-SLATE:#8E8F99;
     --WHITE: #FFF;
     --CLOUD: #F4F4FD;
     --CORNFLOWER: #E7E9FC;
@@ -196,16 +197,35 @@ body {
 /* end of hero section styling---------------- */
 
 /* about section styling-------------------------------- */
+.about h3 {
+    color: var(--NAVY-BLUE);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.20;
+    /* 120% */
+    letter-spacing: 0.4px;
+    margin: 8px 0;
+}
+
 .about-icon{
     padding: 24px 0;
     text-align: center;
     background-color: var(--CLOUD);
-
 }
 
 /* team section styling--------------------------- */
 .team {
     background-color: var(--CLOUD);
+}
+
+.team-name {
+    color: var(--NAVY-BLUE);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.20;
+    /* 120% */
+    letter-spacing: 0.4px;
+    margin: 0;
 }
 
 .team .list {
@@ -216,10 +236,63 @@ body {
     border-radius: 0px 0px 4px 4px;
     background: var(--WHITE, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-   
 }
 
+.team img {
+    display: block;
+}
 
+.team-caption {
+    padding: 32px 0px;
+
+}
+
+.team-socials {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.team-socials-icon {
+    background-color: var(--IRIS);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-socials-icon svg {
+    fill: var(--WHITE);
+}
+
+/* end of team section styling ---------------------------- */
+
+/* customers section styling ------------------------------ */
+
+.customer-icon {
+    width: 168px;
+    height: 88px;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE);
+    padding: 16px 32px; 
+}
+
+.customer-icon svg {
+    fill: var(--LIGHT-SLATE);
+}
+
+.customer-icon:hover,
+.customer-icon:focus {
+    border: none;   
+    background-color: var(--IRIS);
+}
+
+.customer-icon:hover svg,
+.customer-icon:focus svg {
+    fill: var(--WHITE);
+}
 
 /* footer styling----------------------------------------- */
 .footer {

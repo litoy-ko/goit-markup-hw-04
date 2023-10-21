@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Webstudio website" />
-    <title>Portfolio</title>
+    <title>Homework 4</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,43 +14,44 @@
     />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-</head>
-<body>
-    <header>
-      <a href="index.html" class="logo link">
-          <span class="logo-web">WEB</span><span class="logo-studio-nav">STUDIO</span>
+  </head>
+  <body>
+    <header class="container d-flex header">
+      <div class="d-flex">
+        <a href="index.html" class="logo link">
+          <span class="logo-web">WEB</span
+          ><span class="logo-studio-nav">STUDIO</span>
         </a>
-      <nav>
-        <ul class="list">
-          <li>
-            <a class="link nav-link active" href="index.html">Studio</a>
-          </li>
-          <li>
-            <a class="link nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li>
-            <a class="link nav-link" href="#">Contacts</a>
-          </li>
-        </ul>
-      </nav>
+        <nav>
+          <ul class="list">
+            <li>
+              <a class="link nav-link active" href="index.html">Studio</a>
+            </li>
+            <li>
+              <a class="link nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="link nav-link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <ul class="list">
         <li>
           <a href="mailto:info@devstudio.com" class="link contacts"
-            >info@devstudio.com</a
-          >
+            >info@devstudio.com</a>
         </li>
         <li>
           <a href="tel:+11 (000) 111-11-11" class="link contacts"
-            >+11 (000) 111-11-11</a
-          >
+            >+11 (000) 111-11-11</a>
         </li>
       </ul>
     </header>
     <!-- End of header section -->
 
     <main>
-        <section>
+        <section class="projects">
                 <div>
                     <button>All</button>
                     <button>Website</button>
@@ -58,13 +59,66 @@
                     <button>Design</button>
                     <button>Marketing</button>
                 </div>
-                <ul>
-                    <li>
-                        <img src="" alt="" />
-                        <h3></h3>
-                        <p></p>
-                    </li>
-                </ul>
+                <div class="container">
+                    <ul class="list">
+                        <li>
+                            <img src="./images/img.jpg" alt="" />
+                            <div class="project-caption">
+                                <h3>Banking App Interface Concep</h3>
+                                <p>App</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/img (1).jpg" alt="" />
+                            <div class="project-caption">
+                                <h3>Banking App Interface Concep</h3>
+                                <p>App</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/img (2).jpg" alt="" />
+                            <div class="project-caption">
+                                <h3>Banking App Interface Concep</h3>
+                                <p>App</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/img (3).jpg" alt="" />
+                            <div class="project-caption">
+                                <h3>Banking App Interface Concep</h3>
+                                <p>App</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/img.jpg" alt="" />
+                            <div class="project-caption">
+                                <h3>Banking App Interface Concep</h3>
+                                <p>App</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/img (1).jpg" alt="" />
+                            <div class="project-caption">
+                                <h3>Banking App Interface Concep</h3>
+                                <p>App</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/img (2).jpg" alt="" />
+                            <div class="project-caption">
+                                <h3>Banking App Interface Concep</h3>
+                                <p>App</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/img (3).jpg" alt="" />
+                            <div class="project-caption">
+                                <h3>Banking App Interface Concep</h3>
+                                <p>App</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
 
@@ -72,7 +126,7 @@
 
 
 
-    <footer class="bg-dark">
+    <footer class="container bg-dark footer">
       <a href="index.html" class="logo link">
         <span class="logo-web">WEB</span
         ><span class="logo-studio-footer">STUDIO</span>
@@ -83,6 +137,5 @@
       </p>
     </footer>
     <!-- End of footer section -->
-    
-</body>
+  </body>
 </html>
