@@ -6,7 +6,7 @@
     --WHITE: #FFF;
     --CLOUD: #F4F4FD;
     --CORNFLOWER: #E7E9FC;
-    --ocean: #404bbf;
+    --OCEAN: #404bbf;
 }
 
 body {
@@ -112,6 +112,8 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 24px 0;
+    border-bottom: 1px solid var(--CORNFLOWER);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header .d-flex {
@@ -138,11 +140,11 @@ body {
 
 .nav-link:hover,
 .nav-link:focus {
-    color: var(--ocean)
+    color: var(--OCEAN)
 }
 
 .active {
-    color: var(--ocean);
+    color: var(--OCEAN);
 }
 
 .contacts {
@@ -162,6 +164,11 @@ body {
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
+    background-image:linear-gradient(to bottom, rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url("../images/people-office-1.jpg");
+    /* background: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url("../images/people-office-1.jpg"); same result */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
 .hero-text {
@@ -191,7 +198,7 @@ body {
 .hero-btn:hover,
 .hero-btn:focus {
     cursor: pointer;
-    background: var(--ocean);
+    background: var(--OCEAN);
 }
 
 /* end of hero section styling---------------- */
@@ -295,17 +302,65 @@ body {
 }
 
 /* PORTFOLIO STYLING-------------------------------------- */
+.projects-btn {
+    text-align: center;
+    padding-top: 96px;
+    padding-bottom: 72px;
+
+}
+
+.button-opt {
+    border-radius: 4px;
+    border: 1px solid var(--CORNFLOWER);
+    background: var(--CLOUD);
+    padding: 12px 24px;
+    color: var(--IRIS);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.64px;
+    margin: 0px 12px;
+}
+
+.button-opt:hover,
+.button-opt:focus {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.btn-active {
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--OCEAN);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+
 .projects ul {
     width: 100%;
     flex-wrap:wrap;
+    margin-bottom: 120px;
 }
 .projects li {
     width: 360px;
+    border: 1px solid var(--CORNFLOWER)
+}
+.projects li:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .projects li img{
     width: 100%;
 }
+
+.project-caption {
+    padding: 0px 16px;
+
+}
+
+
 
 
 
@@ -313,7 +368,11 @@ body {
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 156px;
+    /* padding-left: 156px; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 120px;
 }
 .logo-studio-footer {
     color: var(--CLOUD);
@@ -328,4 +387,35 @@ body {
     letter-spacing: 0.32px;
 }
 
+.footer-sm {
+    margin: 0px 0px 16px 0px;
+    /* margin-bottom: 16px; not expected result*/
+    color: var(--WHITE);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    /* multiplier */
+    letter-spacing: 0.32px;
+
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-socials-icon {
+    background-color: var(--IRIS);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-socials-icon svg {
+    fill: var(--WHITE);
+}
 /* end of footer styling--------------------------------- */
